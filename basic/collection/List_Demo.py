@@ -48,3 +48,13 @@ print(list(c[1:]))
 print(list(c[0::2]))
 print(list(c[1::2]))
 print(list(c[10:5:-1]))
+
+
+t = tuple()
+t = (10, 20, 30)
+print(t)
+print(type(t))
+
+t = 10,
+print(t)
+print(type(t))
