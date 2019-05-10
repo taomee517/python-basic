@@ -13,3 +13,23 @@ for it in range(10):
 powList = [x * x for x in range(10)]
 for loop in powList:
     print(loop, end=" ")
+print()
+
+text = "Hello,World"
+for c in text:
+    if "," == c:
+        break
+    print(c, end="_")
+print()
+
+for x in range(10, 0, -2):
+    print(x, end="_")
+
+
+listTemp = ["OK", "Hello", "Bye"]
+print()
+print(listTemp[:])
+
+listTemp.append("Love")
+print(listTemp)
+

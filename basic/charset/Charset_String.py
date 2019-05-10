@@ -31,9 +31,9 @@ print(text)
 print(text + note)
 
 # 不换行的打印,end= anything
-print(text,end=" ")
-print(note,end='')
-print("bye",end="~")
+print(text, end=" ")
+print(note, end='')
+print("bye", end="~")
 print()
 
 val = str(3.15)
@@ -42,5 +42,9 @@ print(val)
 hexVal = hex(255)
 print("255转成16进制字符串：", hexVal)
 
-text = text.replace("W","w")
+text = text.replace("W", "w")
 print(text)
+
+for c in note:
+    print(c, end="_")
+
