@@ -39,5 +39,8 @@ print()
 val = str(3.15)
 print(val)
 
+hexVal = hex(255)
+print("255转成16进制字符串：", hexVal)
+
 text = text.replace("W","w")
 print(text)
