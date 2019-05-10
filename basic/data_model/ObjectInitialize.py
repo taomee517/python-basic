@@ -36,3 +36,12 @@ print(ka)
 
 kb = 5//2
 print(kb)
+
+
+pi = 3.1415926
+fPattern = "{:.2f}"
+piStr = fPattern.format(pi)
+print(piStr)
+
+k = 5
+print(0 < k < 10)
