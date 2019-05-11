@@ -1,3 +1,5 @@
+import heapq
+
 # 列表的创建
 a = list()
 b = []
@@ -58,3 +60,13 @@ print(type(t))
 t = 10,
 print(t)
 print(type(t))
+
+# 从列表中取出最大，最小的几个数
+nums = [99, 65, 105, 78, 6, 123, 45, 64, 29, 33]
+largestNums = heapq.nlargest(3, nums)
+print(list(largestNums))
+
+smallestNums = heapq.nsmallest(3, nums)
+print(list(smallestNums))
+
+
