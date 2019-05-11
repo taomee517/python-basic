@@ -61,8 +61,12 @@ t = 10,
 print(t)
 print(type(t))
 
+# 列表排序
 # 从列表中取出最大，最小的几个数
 nums = [99, 65, 105, 78, 6, 123, 45, 64, 29, 33]
+nums.sort(reverse=True)
+print(list(nums))
+
 largestNums = heapq.nlargest(3, nums)
 print(list(largestNums))
 
