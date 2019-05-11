@@ -69,4 +69,10 @@ print(list(largestNums))
 smallestNums = heapq.nsmallest(3, nums)
 print(list(smallestNums))
 
+sortedLargestNums = sorted(nums)[-6:]
+print(list(reversed(sortedLargestNums)))
+
+sortedSmallestNums = sorted(nums)[:6]
+print(list(sortedSmallestNums))
+
 
