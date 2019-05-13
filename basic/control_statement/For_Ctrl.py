@@ -1,6 +1,7 @@
 # 从数组中遍历
-for looper in (0,10):
-    print(looper)
+for looper in (1, 2, 3):
+    print(looper, end=" ")
+print()
 
 # 从范围中遍历
 for it in range(10):
