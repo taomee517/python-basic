@@ -19,3 +19,12 @@ print(dictTemp)
 # 根据key获取value
 print(dictTemp["nickName"], end="\t")
 print(dictTemp["age"])
+print(dictTemp.get("age"))
+print(dictTemp.get("key"))
+# key对应的value为空时，以下取值方式会报错
+# print(dictTemp["key"])
+
+key = ["name", "age", "company"]
+value = ["tao", 30, "alibaba"]
+zipDict = zip(key, value)
+print(dict(zipDict))
