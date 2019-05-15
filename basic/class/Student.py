@@ -3,7 +3,7 @@
 # setColor 对象的方法
 
 
-class Student:
+class Student():
     def __init__(self, school):
         self.school = school
 
