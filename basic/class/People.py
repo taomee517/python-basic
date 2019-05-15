@@ -33,6 +33,10 @@ pro.position = "project manager"
 print(p.__dict__)
 print(m.__dict__)
 print(m.__doc__)
+# 自有属性
 print(pro.__dict__)
+
+# 全部属性，包括父类
+print(dir(pro))
 print(pro.sex)
 pro.work()
