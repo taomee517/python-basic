@@ -20,13 +20,15 @@ class Man(People):
 
 
 class Programmer(Man):
-    def __init__(self):
-        self.field = "IT"
+    field = "IT"
+
+    def __init__(self, name):
+        Man.__init__(self, name)
 
 
 p = People()
 m = Man("张飞")
-pro = Programmer()
+pro = Programmer("小王")
 pro.position = "project manager"
 print(p.__dict__)
 print(m.__dict__)
