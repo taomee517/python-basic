@@ -1,0 +1,10 @@
+class Operation:
+    WRITE = 'w'
+    READ = 'r'
+    APPEND = 'a'
+    BINARY_READ = 'rb'
+    BINARY_WRITE = 'wb'
+    BINARY_APPEND = 'ab'
+    READ_WRITE = 'r+'
+    READ_WRITE_COVER = 'w+'
+    READ_WRITE_APPEND = 'a+'
