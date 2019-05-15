@@ -1,3 +1,4 @@
+
 class People:
     def __init__(self):
         self.self = self
@@ -26,6 +27,10 @@ class Programmer(Man):
         Man.__init__(self, name)
 
 
+class Female(People):
+    __slots__ = ("sex", "name", "age")
+
+
 p = People()
 m = Man("张飞")
 pro = Programmer("小王")
@@ -40,3 +45,9 @@ print(pro.__dict__)
 print(dir(pro))
 print(pro.sex)
 pro.work()
+
+f = Female()
+f.name = "柳叶"
+f.age = 23
+f.sex = "女"
+
