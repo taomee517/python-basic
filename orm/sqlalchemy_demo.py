@@ -25,7 +25,8 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 user0 = User()
 user0.name = "taomee"
-session.add(user0)
+if not session.query(User).filter(User.name == "taomee").count():
+    session.add(user0)
 session.commit()
 count = session.query(User).count()
 result = session.query(User).filter(User.id == 8)
