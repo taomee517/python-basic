@@ -14,17 +14,20 @@ class User(Base):
 
     '表的结构'
     id = Column(Integer, primary_key=True)
-    username = Column(String(50))
+    name = Column(String(50))
 
 
 # 初始化数据库连接:
-engine = create_engine('mysql+mysqlconnector://root:lt030517@localhost:3306/lifevc')
+engine = create_engine('mysql+mysqlconnector://root:123456@localhost:3306/db_demo')
 DBSession = sessionmaker(bind=engine)
 
 
 session = DBSession()
 count = session.query(User).count()
-user = session.query(User).filter(User.id == 12).one()
+result = session.query(User).filter(User.id == 12)
+# 三元表达式
+user = None if result is not None else result.one()
 print(count)
-print(user.__dict__)
+if user is not None:
+    print(user.__dict__)
 session.close()
