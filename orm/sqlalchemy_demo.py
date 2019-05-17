@@ -23,10 +23,14 @@ DBSession = sessionmaker(bind=engine)
 
 
 session = DBSession()
+user0 = User()
+user0.name = "taomee"
+session.add(user0)
+session.commit()
 count = session.query(User).count()
-result = session.query(User).filter(User.id == 12)
+result = session.query(User).filter(User.id == 8)
 # 三元表达式
-user = None if result is not None else result.one()
+user = None if result is None else result.one()
 print(count)
 if user is not None:
     print(user.__dict__)
