@@ -1,0 +1,17 @@
+知乎上转的Linux核心指令
+
+文件目录操作: mkdir, cd, pwd, which
+文件查看，查找: ls, cat, more, less, grep, tail, find, ldd, whereis, tee, awk
+文件操作: cp, scp, rm, gzip, gunzip, zip, unzip, tar, mv, ln
+日期时间: ntpdate, date
+网络: ping, telnet, traceroute, tcpdump, netstat, wget
+用户权限: useradd, passwd, chmod, chown, chgrp, sudo, visudo, su, who
+硬盘管理: df, du, mount, unmout, fs
+进程管理: ps, kill, killall, pstack, whom, fg, bgCPU：turbostat
+应用安装: rpm, yum
+定时任务：crontab
+
+作者：陈益波
+链接：https://www.zhihu.com/question/61232606/answer/654561981
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
