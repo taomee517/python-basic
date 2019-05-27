@@ -21,3 +21,40 @@ if word1 not in append_lines:
 if word2 not in append_lines:
     file_append.write(word2)
 file_append.close()
+
+# import linecache
+# 
+# filename = 'C:\\Users\\Administrator.PC-201904211321\\Desktop\\start (2).log'
+#
+#
+# # 放入缓存防止内存过载
+# def get_line_count(filename):
+#     line_count = 0
+#     file = open(filename, 'r+')
+#     while True:
+#         buffer = file.read(8192 * 1024)
+#         if not buffer:
+#             break
+#         line_count += buffer.count('\n')
+#     file.close()
+#     return line_count
+#
+#
+# if __name__ == '__main__':
+#     file1 = 'acceptor.txt'
+#     if not os.path.exists(file1):
+#         Path(file1).touch()
+#     file_append = open(file1, Operation.READ_WRITE)
+#     # get the last 30 lines
+#     n = 20000
+#     linecache.clearcache()
+#     line_count = get_line_count(filename)
+#     print('line count total:', line_count)
+#     line_count = line_count - n
+#     print('line_count:[%s]' % line_count)
+#
+#     # the last 20000 lines
+#     for i in range(n+1):
+#         last_line = linecache.getline(filename, line_count)
+#         file_append.write(last_line)
+#         line_count += 1
