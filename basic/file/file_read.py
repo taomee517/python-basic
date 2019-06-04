@@ -6,9 +6,17 @@ import os
 file = open("words.txt", Operation.READ)
 lines = file.readlines()
 for line in lines[1:]:
-    print(line)
+    print(line.strip())
 file.close()
 
+# with open ... as ...这种写法可以省去file.close的步骤，程序会自动帮忙关闭资源
+print('===with open ... as ...====')
+with open("words.txt", Operation.READ) as f:
+    for line in f.readlines():
+        print(line.strip())
+
+
+print('===word append===')
 file1 = 'words_bak.txt'
 if not os.path.exists(file1):
     Path(file1).touch()
