@@ -4,7 +4,10 @@ words = dict()
 words.__setitem__("你慘了", "your goose will be cooked!")
 words.__setitem__("古代先贤", "ancient sages")
 words.__setitem__("稀土", "rare earth")
-
+words.__setitem__("混乱", "disorder")
+words.__setitem__("制动档", "brake gear")
+words.__setitem__("离合", "clutch")
+words.__setitem__("妥协", "compromise")
 
 # items = words.items()
 
