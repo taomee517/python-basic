@@ -12,6 +12,9 @@ words.__setitem__("妥协", "compromise")
 words.__setitem__("招募", "recruit")
 words.__setitem__("抗议", "protest")
 words.__setitem__("算法", "algorithm")
+words.__setitem__("委员会", "committee")
+words.__setitem__("致命的", "fatal")
+words.__setitem__("没有意义", "make no sense")
 
 # items = words.items()
 
