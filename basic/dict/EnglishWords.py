@@ -15,6 +15,11 @@ words.__setitem__("算法", "algorithm")
 words.__setitem__("委员会", "committee")
 words.__setitem__("致命的", "fatal")
 words.__setitem__("没有意义", "make no sense")
+words.__setitem__("私下的", "under the table")
+words.__setitem__("橡皮子弹", "rubber bullet")
+words.__setitem__("潦草", "scrawl")
+words.__setitem__("资本主义", "capitalism")
+words.__setitem__("美联储", "the Federal Reserve")
 
 # items = words.items()
 
