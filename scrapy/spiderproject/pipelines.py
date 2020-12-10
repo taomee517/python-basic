@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import pymysql
 import sys
+
 sys.getdefaultencoding()
 
 
@@ -33,13 +34,13 @@ class WikiPipeline(object):
         for c in range(0, len(class_another), 2):
             wiki_class_another.append(class_another[c])
 
-		# 通过zip把四个列表组合在一起，插入数据库中
+        # 通过zip把四个列表组合在一起，插入数据库中
         for insert_q in list(zip(wiki_title, wiki_link, wiki_data_time, wiki_class_another)):
-            sql_insert = "INSERT INTO wiki_info(title, link, data_time, class_another) VALUES ('{}', 'http://wiki.ioin.in{}', '{}', '{}')".format(insert_q[0], insert_q[1], insert_q[2], insert_q[3])
+            sql_insert = "INSERT INTO wiki_info(title, link, data_time, class_another) VALUES ('{}', 'http://wiki.ioin.in{}', '{}', '{}')".format(
+                insert_q[0], insert_q[1], insert_q[2], insert_q[3])
             print(sql_insert)
             self.conn.query(sql_insert)
         return item
-
 
     def close_spider(self):
         self.conn.close()

@@ -1,10 +1,10 @@
 # 函数也是对象
-def test():
+def fun():
     print("测试函数")
 
 
-test()
+fun()
 
 # test函数赋值给了a
-a = test
+a = fun
 a()
